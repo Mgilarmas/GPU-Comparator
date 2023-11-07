@@ -2,7 +2,7 @@ function initialize() {
   const HEADER_MENU_ICON = document.getElementById("menu-icon");
   HEADER_MENU_ICON.addEventListener("click", openSideMenu);
 
-  const HEADER_SIDE_MENU_ICON = document.getElementById("side-menu-icon");
+  const HEADER_SIDE_MENU_ICON = document.getElementById("menu-options");
   HEADER_SIDE_MENU_ICON.addEventListener("click", hideSideMenu);
 }
 

@@ -13,6 +13,8 @@ body {
   background-color: rgb(221, 29, 71);
   width: 100vw;
   height: 5vh;
+  display: flex;
+  align-items: center;
 }
 
 .header-menu ul{
@@ -31,6 +33,18 @@ body {
   color: rgb(63, 61, 61);
 }
 
+#side-menu{
+  background-color: rgb(221, 29, 71);
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  left: -90vw;
+  transition: 0.8s;
+}
+
 .header-img {
   display: flex;
 }
@@ -46,8 +60,6 @@ body {
   color: floralwhite;
     text-shadow: 2px 2px black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 10vw;
-    margin: 5%;
 }
 
 #header p{
@@ -112,7 +124,7 @@ body {
 }
 
 .container-img img {
-  width: 50%;
+  width: 100%;
 }
 
 table th {
@@ -159,23 +171,49 @@ table caption {
   color: rgb(221, 29, 71);
   text-shadow: 2px 2px black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 1em;
 }
 
 #web-design {
   color: rgb(221, 29, 71);
   text-shadow: 2px 2px black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 1em;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  .header-menu{
+    justify-content: end;
+  }
+
   .header-menu li{
     margin-top: 0.1em;
     margin-left: 1em;
     font-size: larger;
+    visibility: hidden;
+  }
+
+  .header-menu i{
+    font-size: xx-large;
+    color: floralwhite;
+    margin-right: 1em;
+  }
+
+  #side-menu ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #side-menu li{
+    list-style: none;
+    margin: 1em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+  }
+
+  #side-menu a{
+    text-decoration: none;
+    color: floralwhite;
   }
 
   .header-img {
@@ -188,6 +226,11 @@ table caption {
     width: 100vw;
     height: 50vh;
     margin-top: 5vh;
+  }
+
+  #header h1 {
+      font-size: 10vw;
+      margin: 5%;
   }
   
   #header button{
@@ -209,13 +252,31 @@ table caption {
   }
 
   .container-img {
-    width: 70%;
+    width: 30%;
     margin: 1em;
+  }
+
+  #contact {
+    padding: 1em;
+  }
+  
+  #web-design {
+    padding: 1em;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .header-menu li{
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  .header-menu i{
+    visibility: hidden;
+  }
+
   .header-img {
     flex-direction: column-reverse;
     height: 100vh;
@@ -227,23 +288,21 @@ table caption {
     height: 50vh;
     margin-top: 5vh;
   }
+
+  #header h1 {
+    font-size: 10vw;
+    margin: 5%;
+}
   
   #header button{
     width: 50%;
-    height: 17%;
-    background-color: rgb(221, 29, 71);
-    color: floralwhite;
-    border-radius: 50px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50%;
     font-size: x-large;
     transition: transform .5s;
-    margin: 15%;
+    margin: 0.5em;
   }
   
   #header button:hover{
-    background-color: rgb(221, 29, 71);
-    border-radius: 200px;
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9), 0 6px 20px 0 rgba(255, 255, 255, 0.9);
     font-size: x-large;
     transform: scale(2);
   }
@@ -254,16 +313,219 @@ table caption {
   }
 
   .container-img {
-    width: 70%;
+    width: 30%;
     margin: 1em;
+  }
+
+  #contact {
+    padding: 1em;
+  }
+  
+  #web-design {
+    padding: 1em;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .header-menu li{
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  .header-menu i{
+    visibility: hidden;
+  }
+
+
+  .header-img {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img{
+    width: 100vw;
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 10vw;
+    margin: 0.05em;
+}
+  
+  #header button{
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 2em;
+  }
+  
+  #header button:hover{
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 10vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 25%;
+    margin: 1em;
+  }
+
+  #contact {
+    padding: 1em;
+    font-size: larger;
+  }
+  
+  #web-design {
+    padding: 1em;
+    font-size: larger;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+  .header-menu li{
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  .header-menu i{
+    visibility: hidden;
+  }
+
+
+  .header-img {
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img{
+    width: 50vw;
+    height: 100vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 7vw;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+  
+  #header button{
+    width: 50%;
+    height: 10%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 5em;
+  }
+  
+  #header button:hover{
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 10vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 25%;
+    margin: 1em;
+  }
+
+  .container-img img {
+    width: 100%;
+  }
+
+  #contact {
+    padding: 1em;
+    font-size: larger;
+  }
+  
+  #web-design {
+    padding: 1em;
+    font-size: larger;
+  }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+  .header-menu li{
+    margin-top: 0.1em;
+    margin-left: 4em;
+    font-size: xx-large;
+  }
+
+  .header-menu i{
+    visibility: hidden;
+  }
+
+
+  .header-img {
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img{
+    width: 50vw;
+    height: 100vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 7vw;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+  
+  #header button{
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 3em;
+  }
+  
+  #header button:hover{
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 5vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 20%;
+    margin: 1.2em;
+  }
+
+  #contact {
+    padding: 1em;
+    font-size: xx-large;
+  }
+  
+  #web-design {
+    padding: 1em;
+    font-size: xx-large;
+  }
+}
