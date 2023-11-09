@@ -15,6 +15,7 @@ body {
   height: 5vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-menu ul{
@@ -149,6 +150,7 @@ table caption {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5em;
 }
 
 .table-container table {
@@ -164,7 +166,6 @@ table caption {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 30%;
 }
 
 #contact {
@@ -474,7 +475,6 @@ table caption {
   .header-menu i{
     visibility: hidden;
   }
-
 
   .header-img {
     flex-direction: row;
