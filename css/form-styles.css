@@ -9,44 +9,6 @@ body {
     padding: 0;
   }
 
-  .header-menu{
-    position: fixed;
-    background-color: rgb(221, 29, 71);
-    width: 100vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header-menu ul{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .header-menu li{
-    list-style: none;
-    color: rgb(153, 153, 153);
-    font-size: xx-large;
-  }
-  
-  .header-menu a{
-    text-decoration: none;
-    color: rgb(63, 61, 61);
-  }
-
-  #side-menu{
-    background-color: rgb(221, 29, 71);
-    width: 50vw;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
-    left: -90vw;
-    transition: 0.8s;
-  }
-
   #footer {
     background-color: rgb(32, 31, 31);
     width: 100vw;
@@ -72,13 +34,29 @@ body {
 @media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  .header-menu i{
+    visibility: hidden;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .header-menu i{
+    visibility: hidden;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+  .header-menu i{
+    visibility: hidden;
+  }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  .header-menu i{
+    visibility: hidden;
+  }
+}

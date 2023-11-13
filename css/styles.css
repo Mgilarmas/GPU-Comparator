@@ -33,6 +33,7 @@ body {
 .header-menu a {
   text-decoration: none;
   color: rgb(63, 61, 61);
+  font-weight: bold;
 }
 
 #side-menu {
@@ -169,6 +170,7 @@ table caption {
 
 .table-container table {
   background-image: linear-gradient(rgb(253, 104, 161), rgb(255, 39, 111), rgb(255, 0, 98));
+  border: 3px solid;
 }
 
 #footer {
