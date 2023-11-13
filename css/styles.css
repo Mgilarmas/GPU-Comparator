@@ -1,6 +1,7 @@
 body {
   background-color: rgb(63, 61, 61);
   overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -8,7 +9,7 @@ body {
   padding: 0;
 }
 
-.header-menu{
+.header-menu {
   position: fixed;
   background-color: rgb(221, 29, 71);
   width: 100vw;
@@ -16,25 +17,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 20;
 }
 
-.header-menu ul{
+.header-menu ul {
   display: flex;
   flex-direction: row;
 }
 
-.header-menu li{
+.header-menu li {
   list-style: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(153, 153, 153);
 }
 
-.header-menu a{
+.header-menu a {
   text-decoration: none;
   color: rgb(63, 61, 61);
 }
 
-#side-menu{
+#side-menu {
   background-color: rgb(221, 29, 71);
   width: 50vw;
   height: 100vh;
@@ -48,39 +49,53 @@ body {
 
 .header-img {
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 #header {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#header img{
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
 }
 
 #header h1 {
   color: floralwhite;
-    text-shadow: 2px 2px black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 2px 2px black;
+  z-index: 10;
+
 }
 
-#header p{
+#header p {
   color: rgb(153, 153, 153);
-    text-shadow: 2px 2px black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 5%;
-    font-size: xx-large;
+  text-shadow: 2px 2px black;
+  margin: 5%;
+  font-size: xx-large;
+  z-index: 10;
 }
 
-#header button{
+#header button {
   background-color: rgb(221, 29, 71);
-    color: floralwhite;
-    border-radius: 50px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: floralwhite;
+  border-radius: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10;
 }
 
-#header button:hover{
-  background-color: rgb(221, 29, 71);
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9), 0 6px 20px 0 rgba(255, 255, 255, 0.9);
+#header button:hover {
+  background-color: rgb(216, 81, 110);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9), 0 6px 20px 0 rgba(255, 255, 255, 0.9);
+}
+
+.img-container{
+  z-index: 10;
 }
 
 .text-container {
@@ -92,14 +107,12 @@ body {
 .text-container h2 {
   color: floralwhite;
   text-shadow: 2px 2px black;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #p1 {
   color: floralwhite;
   text-shadow: 2px 2px black;
   text-align: justify;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: xx-large;
   margin: 1em;
 }
@@ -115,13 +128,15 @@ body {
 .container-img {
   display: flex;
   justify-content: center;
-  transition: transform .2s;
+  transition: transform .2s, filter 1s;
+  filter: grayscale(100%);
 }
 
 .container-img:hover {
   display: flex;
   justify-content: center;
   transform: scale(1.5);
+  filter: grayscale(0%);
 }
 
 .container-img img {
@@ -130,7 +145,6 @@ body {
 
 table th {
   border: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-image: linear-gradient(rgb(221, 29, 71));
 }
 
@@ -171,48 +185,45 @@ table caption {
 #contact {
   color: rgb(221, 29, 71);
   text-shadow: 2px 2px black;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #web-design {
   color: rgb(221, 29, 71);
   text-shadow: 2px 2px black;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  .header-menu{
+  .header-menu {
     justify-content: end;
   }
 
-  .header-menu li{
+  .header-menu li {
     margin-top: 0.1em;
     margin-left: 1em;
     font-size: larger;
     visibility: hidden;
   }
 
-  .header-menu i{
+  .header-menu i {
     font-size: xx-large;
     color: floralwhite;
     margin-right: 1em;
   }
 
-  #side-menu ul{
+  #side-menu ul {
     display: flex;
     flex-direction: column;
   }
 
-  #side-menu li{
+  #side-menu li {
     list-style: none;
     margin: 1em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: xx-large;
   }
 
-  #side-menu a{
+  #side-menu a {
     text-decoration: none;
     color: floralwhite;
   }
@@ -223,68 +234,7 @@ table caption {
     width: 100vw;
   }
 
-  .header-img img{
-    width: 100vw;
-    height: 50vh;
-    margin-top: 5vh;
-  }
-
-  #header h1 {
-      font-size: 10vw;
-      margin: 5%;
-  }
-  
-  #header button{
-    width: 50%;
-    height: 17%;
-    font-size: x-large;
-    transition: transform .5s;
-    margin: 15%;
-  }
-  
-  #header button:hover{
-    font-size: x-large;
-    transform: scale(2);
-  }
-
-  .text-container h2 {
-    font-size: 10vw;
-    margin: 1em;
-  }
-
-  .container-img {
-    width: 30%;
-    margin: 1em;
-  }
-
-  #contact {
-    padding: 1em;
-  }
-  
-  #web-design {
-    padding: 1em;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .header-menu li{
-    margin-top: 0.1em;
-    margin-left: 1em;
-    font-size: xx-large;
-  }
-
-  .header-menu i{
-    visibility: hidden;
-  }
-
-  .header-img {
-    flex-direction: column-reverse;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .header-img img{
+  .header-img img {
     width: 100vw;
     height: 50vh;
     margin-top: 5vh;
@@ -293,17 +243,17 @@ table caption {
   #header h1 {
     font-size: 10vw;
     margin: 5%;
-}
-  
-  #header button{
+  }
+
+  #header button {
     width: 50%;
-    height: 50%;
+    height: 17%;
     font-size: x-large;
     transition: transform .5s;
-    margin: 0.5em;
+    margin: 15%;
   }
-  
-  #header button:hover{
+
+  #header button:hover {
     font-size: x-large;
     transform: scale(2);
   }
@@ -321,7 +271,68 @@ table caption {
   #contact {
     padding: 1em;
   }
-  
+
+  #web-design {
+    padding: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-menu li {
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  .header-menu i {
+    visibility: hidden;
+  }
+
+  .header-img {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 10vw;
+    margin: 5%;
+  }
+
+  #header button {
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 0.5em;
+  }
+
+  #header button:hover {
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 10vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 30%;
+    margin: 1em;
+  }
+
+  #contact {
+    padding: 1em;
+  }
+
   #web-design {
     padding: 1em;
   }
@@ -329,13 +340,13 @@ table caption {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .header-menu li{
+  .header-menu li {
     margin-top: 0.1em;
     margin-left: 1em;
     font-size: xx-large;
   }
 
-  .header-menu i{
+  .header-menu i {
     visibility: hidden;
   }
 
@@ -346,7 +357,7 @@ table caption {
     width: 100vw;
   }
 
-  .header-img img{
+  .header-img img {
     width: 100vw;
     height: 50vh;
     margin-top: 5vh;
@@ -355,17 +366,17 @@ table caption {
   #header h1 {
     font-size: 10vw;
     margin: 0.05em;
-}
-  
-  #header button{
+  }
+
+  #header button {
     width: 50%;
     height: 50%;
     font-size: x-large;
     transition: transform .5s;
     margin: 2em;
   }
-  
-  #header button:hover{
+
+  #header button:hover {
     font-size: x-large;
     transform: scale(2);
   }
@@ -384,7 +395,7 @@ table caption {
     padding: 1em;
     font-size: larger;
   }
-  
+
   #web-design {
     padding: 1em;
     font-size: larger;
@@ -394,13 +405,13 @@ table caption {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-  .header-menu li{
+  .header-menu li {
     margin-top: 0.1em;
     margin-left: 1em;
     font-size: xx-large;
   }
 
-  .header-menu i{
+  .header-menu i {
     visibility: hidden;
   }
 
@@ -411,7 +422,7 @@ table caption {
     width: 100vw;
   }
 
-  .header-img img{
+  .header-img img {
     width: 50vw;
     height: 100vh;
     margin-top: 5vh;
@@ -423,17 +434,17 @@ table caption {
     margin-bottom: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-}
-  
-  #header button{
+  }
+
+  #header button {
     width: 50%;
     height: 10%;
     font-size: x-large;
     transition: transform .5s;
     margin: 5em;
   }
-  
-  #header button:hover{
+
+  #header button:hover {
     font-size: x-large;
     transform: scale(2);
   }
@@ -456,7 +467,7 @@ table caption {
     padding: 1em;
     font-size: larger;
   }
-  
+
   #web-design {
     padding: 1em;
     font-size: larger;
@@ -466,13 +477,13 @@ table caption {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-  .header-menu li{
+  .header-menu li {
     margin-top: 0.1em;
     margin-left: 4em;
     font-size: xx-large;
   }
 
-  .header-menu i{
+  .header-menu i {
     visibility: hidden;
   }
 
@@ -482,7 +493,7 @@ table caption {
     width: 100vw;
   }
 
-  .header-img img{
+  .header-img img {
     width: 50vw;
     height: 100vh;
     margin-top: 5vh;
@@ -494,19 +505,19 @@ table caption {
     margin-bottom: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-}
-  
-  #header button{
+  }
+
+  #header button {
     width: 50%;
     height: 50%;
     font-size: x-large;
     transition: transform .5s;
     margin: 3em;
   }
-  
-  #header button:hover{
+
+  #header button:hover {
     font-size: x-large;
-    transform: scale(2);
+    transform: scale(1.3);
   }
 
   .text-container h2 {
@@ -523,7 +534,7 @@ table caption {
     padding: 1em;
     font-size: xx-large;
   }
-  
+
   #web-design {
     padding: 1em;
     font-size: xx-large;
