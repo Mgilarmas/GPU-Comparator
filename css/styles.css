@@ -1,0 +1,544 @@
+body {
+  background-color: rgb(63, 61, 61);
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu {
+  position: fixed;
+  background-color: rgb(221, 29, 71);
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+}
+
+.header-menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-menu li {
+  list-style: none;
+  color: rgb(153, 153, 153);
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: rgb(63, 61, 61);
+  font-weight: bold;
+}
+
+#side-menu {
+  background-color: rgb(221, 29, 71);
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  left: -90vw;
+  transition: 0.8s;
+}
+
+.header-img {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#header img{
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#header h1 {
+  color: floralwhite;
+  text-shadow: 2px 2px black;
+  z-index: 10;
+
+}
+
+#header p {
+  color: rgb(153, 153, 153);
+  text-shadow: 2px 2px black;
+  margin: 5%;
+  font-size: xx-large;
+  z-index: 10;
+}
+
+#header button {
+  background-color: rgb(221, 29, 71);
+  color: floralwhite;
+  border-radius: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10;
+}
+
+#header button:hover {
+  background-color: rgb(216, 81, 110);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9), 0 6px 20px 0 rgba(255, 255, 255, 0.9);
+}
+
+.img-container{
+  z-index: 10;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container h2 {
+  color: floralwhite;
+  text-shadow: 2px 2px black;
+}
+
+#p1 {
+  color: floralwhite;
+  text-shadow: 2px 2px black;
+  text-align: justify;
+  font-size: xx-large;
+  margin: 1em;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  transition: transform .2s, filter 1s;
+  filter: grayscale(100%);
+}
+
+.container-img:hover {
+  display: flex;
+  justify-content: center;
+  transform: scale(1.5);
+  filter: grayscale(0%);
+}
+
+.container-img img {
+  width: 100%;
+}
+
+table th {
+  border: none;
+  background-image: linear-gradient(rgb(221, 29, 71));
+}
+
+table tr {
+  border: 1px solid;
+}
+
+table caption {
+  color: floralwhite;
+  font-size: xx-large;
+  font-style: oblique;
+  text-shadow: 2px 2px black;
+  margin: 1em;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.table-container table {
+  background-image: linear-gradient(rgb(253, 104, 161), rgb(255, 39, 111), rgb(255, 0, 98));
+  border: 3px solid;
+}
+
+#footer {
+  background-color: rgb(32, 31, 31);
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  color: rgb(221, 29, 71);
+  text-shadow: 2px 2px black;
+}
+
+#web-design {
+  color: rgb(221, 29, 71);
+  text-shadow: 2px 2px black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .header-menu {
+    justify-content: end;
+  }
+
+  .header-menu li {
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: larger;
+    visibility: hidden;
+  }
+
+  .header-menu i {
+    font-size: xx-large;
+    color: floralwhite;
+    margin-right: 1em;
+  }
+
+  #side-menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #side-menu li {
+    list-style: none;
+    margin: 1em;
+    font-size: xx-large;
+  }
+
+  #side-menu a {
+    text-decoration: none;
+    color: floralwhite;
+  }
+
+  .header-img {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 10vw;
+    margin: 5%;
+  }
+
+  #header button {
+    width: 50%;
+    height: 17%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 15%;
+  }
+
+  #header button:hover {
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 10vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 30%;
+    margin: 1em;
+  }
+
+  #contact {
+    padding: 1em;
+  }
+
+  #web-design {
+    padding: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-menu li {
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  .header-menu i {
+    visibility: hidden;
+  }
+
+  .header-img {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 10vw;
+    margin: 5%;
+  }
+
+  #header button {
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 0.5em;
+  }
+
+  #header button:hover {
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 10vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 30%;
+    margin: 1em;
+  }
+
+  #contact {
+    padding: 1em;
+  }
+
+  #web-design {
+    padding: 1em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header-menu li {
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  .header-menu i {
+    visibility: hidden;
+  }
+
+
+  .header-img {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 10vw;
+    margin: 0.05em;
+  }
+
+  #header button {
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 2em;
+  }
+
+  #header button:hover {
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 10vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 25%;
+    margin: 1em;
+  }
+
+  #contact {
+    padding: 1em;
+    font-size: larger;
+  }
+
+  #web-design {
+    padding: 1em;
+    font-size: larger;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .header-menu li {
+    margin-top: 0.1em;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  .header-menu i {
+    visibility: hidden;
+  }
+
+
+  .header-img {
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img {
+    width: 50vw;
+    height: 100vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 7vw;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  #header button {
+    width: 50%;
+    height: 10%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 5em;
+  }
+
+  #header button:hover {
+    font-size: x-large;
+    transform: scale(2);
+  }
+
+  .text-container h2 {
+    font-size: 10vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 25%;
+    margin: 1em;
+  }
+
+  .container-img img {
+    width: 100%;
+  }
+
+  #contact {
+    padding: 1em;
+    font-size: larger;
+  }
+
+  #web-design {
+    padding: 1em;
+    font-size: larger;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .header-menu li {
+    margin-top: 0.1em;
+    margin-left: 4em;
+    font-size: xx-large;
+  }
+
+  .header-menu i {
+    visibility: hidden;
+  }
+
+  .header-img {
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header-img img {
+    width: 50vw;
+    height: 100vh;
+    margin-top: 5vh;
+  }
+
+  #header h1 {
+    font-size: 7vw;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  #header button {
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+    transition: transform .5s;
+    margin: 3em;
+  }
+
+  #header button:hover {
+    font-size: x-large;
+    transform: scale(1.3);
+  }
+
+  .text-container h2 {
+    font-size: 5vw;
+    margin: 1em;
+  }
+
+  .container-img {
+    width: 20%;
+    margin: 1.2em;
+  }
+
+  #contact {
+    padding: 1em;
+    font-size: xx-large;
+  }
+
+  #web-design {
+    padding: 1em;
+    font-size: xx-large;
+  }
+}
