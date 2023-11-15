@@ -1,19 +1,19 @@
 window.onload = initialize;
 
 function initialize(){
-  var formGpu = document.getElementById("gpu-form")
-  formGpu.addEventListener("submit", validateFormGpu)
+  const FORM_GPU = document.getElementById("gpu-form")
+  FORM_GPU.addEventListener("submit", validateFormGpu)
 }
 
 function validateFormGpu(event){
-  var formGpu = event.target;
+  const FORM_GPU = event.target;
 
-  var brand = formGpu["brand"].value;
-  var series = formGpu["series"].value;
-  var model = formGpu["model"].value;
-  var vram = formGpu["vram"].value;
+  const BRAND = FORM_GPU["brand"].value;
+  const SERIES = FORM_GPU["series"].value;
+  const MODEL = FORM_GPU["model"].value;
+  const VRAM = FORM_GPU["vram"].value;
 
-  if(!brand || brand == ""){
+  if(!BRAND || BRAND == ""){
     event.preventDefault();
     document.getElementById("error-brand-required").style.display = "block";
     console.log("* error: Please enter a brand");
@@ -21,7 +21,7 @@ function validateFormGpu(event){
     document.getElementById("error-brand-required").style.display = "none";
   }
 
-  if(!series || series == ""){
+  if(!SERIES || SERIES == ""){
     event.preventDefault();
     document.getElementById("error-series-required").style.display = "block";
     console.log("* error: Please enter a series");
@@ -29,7 +29,7 @@ function validateFormGpu(event){
     document.getElementById("error-series-required").style.display = "none";
   }
 
-  if(!model || model == ""){
+  if(!MODEL || MODEL == ""){
     event.preventDefault();
     document.getElementById("error-model-required").style.display = "block";
     console.log("* error: Please enter a model");
@@ -37,7 +37,7 @@ function validateFormGpu(event){
     document.getElementById("error-model-required").style.display = "none";
   }
 
-  if(!vram || vram == ""){
+  if(!VRAM || VRAM == ""){
     event.preventDefault();
     document.getElementById("error-vram-required").style.display = "block";
     console.log("* error: Please enter a vram");
