@@ -9,11 +9,11 @@ body {
   padding: 0;
 }
 
-#navbar{
+#navbar {
   background-color: rgb(221, 29, 71);
 }
 
-.container{
+.container {
   display: flex;
   width: 100vw;
 }
@@ -57,16 +57,16 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .container{
+  .container {
     flex-direction: column;
     justify-content: center;
   }
 
-  .container-form{
+  .container-form {
     width: 90vw;
   }
 
-  .container-table{
+  .container-table {
     width: 90vw;
   }
 
@@ -78,11 +78,11 @@ body {
     padding: 1em;
   }
 
-  #webs{
+  #webs {
     font-size: large;
   }
 
-  #webs a{
+  #webs a {
     margin-left: 0.2em;
     margin-right: 0.2em;
   }
@@ -90,15 +90,15 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .container{
+  .container {
     flex-direction: row;
   }
 
-  .container-form{
+  .container-form {
     width: 50vw;
   }
 
-  .container-table{
+  .container-table {
     width: 50vw;
   }
 
@@ -110,11 +110,11 @@ body {
     padding: 1em;
   }
 
-  #webs{
+  #webs {
     font-size: xx-large;
   }
 
-  #webs a{
+  #webs a {
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -122,15 +122,15 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .container{
+  .container {
     flex-direction: row;
   }
 
-  .container-form{
+  .container-form {
     width: 50vw;
   }
 
-  .container-table{
+  .container-table {
     width: 50vw;
   }
 
@@ -143,11 +143,11 @@ body {
     font-size: larger;
   }
 
-  #webs{
+  #webs {
     font-size: xx-large;
   }
 
-  #webs a{
+  #webs a {
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -155,15 +155,15 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .container{
+  .container {
     flex-direction: row;
   }
 
-  .container-form{
+  .container-form {
     width: 50vw;
   }
 
-  .container-table{
+  .container-table {
     width: 50vw;
   }
 
@@ -176,11 +176,11 @@ body {
     font-size: larger;
   }
 
-  #webs{
+  #webs {
     font-size: xx-large;
   }
 
-  #webs a{
+  #webs a {
     margin-left: 2em;
     margin-right: 2em;
   }
@@ -188,15 +188,15 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .container{
+  .container {
     flex-direction: row;
   }
 
-  .container-form{
+  .container-form {
     width: 50vw;
   }
 
-  .container-table{
+  .container-table {
     width: 50vw;
   }
 
@@ -209,11 +209,11 @@ body {
     font-size: xx-large;
   }
 
-  #webs{
+  #webs {
     font-size: xx-large;
   }
 
-  #webs a{
+  #webs a {
     margin-left: 3em;
     margin-right: 3em;
   }

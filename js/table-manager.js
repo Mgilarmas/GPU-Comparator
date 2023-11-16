@@ -1,44 +1,44 @@
 let table = [
-    
+
 ];
 
-function initialize(){
-    const TABLE_GPU = document.getElementById("gpu-form")
-    TABLE_GPU.addEventListener("submit", addGpu);
+function initialize() {
+  const TABLE_GPU = document.getElementById("gpu-form")
+  TABLE_GPU.addEventListener("submit", addGpu);
 }
 
 function showGpu() {
-    let bodyTable = document.getElementById("gpu-table");
-    let tableFull = "";
+  let bodyTable = document.getElementById("gpu-table");
+  let tableFull = "";
 
-    for (let i = 0; i < table.length; i++) {
-        tableFull += `<tr><td> ${table[i].brand} </td><td> ${table[i].series} </td><td> ${table[i].model} </td><td> ${table[i].vram} <button class="fs-6 m-0.7 btn btn-danger rounded-pill border border-dark" onclick="deleteGpu(${i})">Delete</button></td></tr>`;
-    }
+  for (let i = 0; i < table.length; i++) {
+    tableFull += `<tr><td> ${table[i].brand} </td><td> ${table[i].series} </td><td> ${table[i].model} </td><td> ${table[i].vram} <button class="fs-6 m-0.7 btn btn-danger rounded-pill border border-dark" onclick="deleteGpu(${i})">Delete</button></td></tr>`;
+  }
 
-    bodyTable.innerHTML = tableFull;
+  bodyTable.innerHTML = tableFull;
 }
 
-function addGpu(event){
-    event.preventDefault();
+function addGpu(event) {
+  event.preventDefault();
 
-    let brandIntroducedByUser = document.getElementById("brand").value;
-    let seriesIntroducedByUser = document.getElementById("series").value;
-    let modelIntroducedByUser = document.getElementById("model").value;
-    let vramIntroducedByUser = document.getElementById("vram").value;
+  let brandIntroducedByUser = document.getElementById("brand").value;
+  let seriesIntroducedByUser = document.getElementById("series").value;
+  let modelIntroducedByUser = document.getElementById("model").value;
+  let vramIntroducedByUser = document.getElementById("vram").value;
 
-    if (brandIntroducedByUser == "" || seriesIntroducedByUser == "" || modelIntroducedByUser == "" || vramIntroducedByUser == ""){
-        
-    } else{
-        let newGpu = {brand: brandIntroducedByUser, series: seriesIntroducedByUser, model: modelIntroducedByUser, vram: vramIntroducedByUser};
-        table.push(newGpu)
-    }  
-    showGpu();
+  if (brandIntroducedByUser == "" || seriesIntroducedByUser == "" || modelIntroducedByUser == "" || vramIntroducedByUser == "") {
+
+  } else {
+    let newGpu = { brand: brandIntroducedByUser, series: seriesIntroducedByUser, model: modelIntroducedByUser, vram: vramIntroducedByUser };
+    table.push(newGpu)
+  }
+  showGpu();
 }
 
 function deleteGpu(tableId) {
-    table.splice(tableId, 1);
+  table.splice(tableId, 1);
 
-    showGpu();
+  showGpu();
 }
 
 initialize();
