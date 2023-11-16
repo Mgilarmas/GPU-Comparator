@@ -12,7 +12,7 @@ function showGpu() {
     let tableFull = "";
 
     for (let i = 0; i < table.length; i++) {
-        tableFull += "<tr><td>" + table[i].brand + "</td><td>" + table[i].series + "</td><td>" + table[i].model + "</td><td>" + table[i].vram + "</td></tr>";
+        tableFull += `<tr><td> ${table[i].brand} </td><td> ${table[i].series} </td><td> ${table[i].model} </td><td> ${table[i].vram} <button class="fs-6 m-0.7 btn btn-danger rounded-pill border border-dark" onclick="deleteGpu(${i})">Delete</button></td></tr>`;
     }
 
     bodyTable.innerHTML = tableFull;

@@ -23,7 +23,7 @@ Requirements for the software and other tools to build, test and push
 
 ## Example
 
--(https://dribbble.com/shots/22642833-Landing-page-design-for-a-fitness-trainer)
+- https://dribbble.com/shots/22642833-Landing-page-design-for-a-fitness-trainer
 
 ## Authors
 
@@ -34,5 +34,7 @@ Requirements for the software and other tools to build, test and push
 
   - Tiburcio
   - Echedey
-  - My classmates
+  - Aythami
+  - Wilmer
+  - Mayer
   - W3School

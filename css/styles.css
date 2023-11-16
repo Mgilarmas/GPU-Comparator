@@ -54,6 +54,7 @@ body {
   overflow: hidden;
 }
 
+
 #header {
   display: flex;
   flex-direction: column;
@@ -189,11 +190,6 @@ table caption {
   text-shadow: 2px 2px black;
 }
 
-#web-design {
-  color: rgb(221, 29, 71);
-  text-shadow: 2px 2px black;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -274,8 +270,13 @@ table caption {
     padding: 1em;
   }
 
-  #web-design {
-    padding: 1em;
+  #webs{
+    font-size: xx-large;
+  }
+
+  #webs a{
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
@@ -335,8 +336,13 @@ table caption {
     padding: 1em;
   }
 
-  #web-design {
-    padding: 1em;
+  #webs{
+    font-size: xx-large;
+  }
+
+  #webs a{
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
@@ -398,9 +404,13 @@ table caption {
     font-size: larger;
   }
 
-  #web-design {
-    padding: 1em;
-    font-size: larger;
+  #webs{
+    font-size: xx-large;
+  }
+
+  #webs a{
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
@@ -470,9 +480,13 @@ table caption {
     font-size: larger;
   }
 
-  #web-design {
-    padding: 1em;
-    font-size: larger;
+  #webs{
+    font-size: xx-large;
+  }
+
+  #webs a{
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
 
@@ -537,8 +551,12 @@ table caption {
     font-size: xx-large;
   }
 
-  #web-design {
-    padding: 1em;
+  #webs{
     font-size: xx-large;
+  }
+
+  #webs a{
+    margin-left: 3em;
+    margin-right: 3em;
   }
 }
