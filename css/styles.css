@@ -133,6 +133,7 @@ body {
 .text-container h2 {
   color: rgb(220, 215, 201);
   text-shadow: 2px 2px black;
+  z-index: 2;
 }
 
 #p1 {
@@ -141,6 +142,7 @@ body {
   text-align: justify;
   font-size: xx-large;
   margin: 1em;
+  z-index: 2;
 }
 
 .container {
@@ -150,19 +152,23 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(63, 78, 79);
-  position: absolute;
+  position: relative;
 }
 
 .img-pattern{
   position: absolute;
   z-index: 1;
-  overflow: hidden;
   width: 100%;
+  display: flex;
   height: 100%;
+  justify-content: right;
 }
 
 .img-pattern img{
-  object-fit: cover;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  rotate: 45deg;
 }
 
 .container-img {
