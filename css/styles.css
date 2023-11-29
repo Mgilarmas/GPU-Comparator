@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(63, 61, 61);
+  background-color: rgb(44, 54, 57);
   overflow-x: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -11,13 +11,15 @@ body {
 
 .header-menu {
   position: fixed;
-  background-color: rgb(221, 29, 71);
+  background-color: rgb(44, 54, 57);
   width: 100vw;
   height: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 20;
+  border-color: black;
+  border-bottom-style: solid;
 }
 
 .header-menu ul {
@@ -27,17 +29,25 @@ body {
 
 .header-menu li {
   list-style: none;
-  color: rgb(153, 153, 153);
+  color: rgb(162, 123, 92);
 }
 
 .header-menu a {
   text-decoration: none;
-  color: rgb(63, 61, 61);
+  color: rgb(92, 162, 107);
   font-weight: bold;
+  transition: .2s;
+}
+
+.header-menu a:hover {
+  text-decoration: none;
+  color: rgb(92, 162, 107);
+  font-weight: bold;
+  background-color: black;
 }
 
 #side-menu {
-  background-color: rgb(221, 29, 71);
+  background-color: rgb(63, 78, 79);
   width: 50vw;
   height: 100vh;
   position: fixed;
@@ -69,7 +79,7 @@ body {
 }
 
 #header h1 {
-  color: floralwhite;
+  color: rgb(220, 215, 201);
   text-shadow: 2px 2px black;
   z-index: 10;
 
@@ -84,7 +94,7 @@ body {
 }
 
 #header button {
-  background-color: rgb(221, 29, 71);
+  background-color: rgb(92, 162, 107);
   color: floralwhite;
   border-radius: 50px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -92,7 +102,7 @@ body {
 }
 
 #header button:hover {
-  background-color: rgb(216, 81, 110);
+  background-color: rgb(92, 162, 107);
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9), 0 6px 20px 0 rgba(255, 255, 255, 0.9);
 }
 
@@ -109,16 +119,24 @@ body {
 .text-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  background-color: rgb(63, 78, 79);
+}
+
+.text-container-description {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: rgb(63, 78, 79);
 }
 
 .text-container h2 {
-  color: floralwhite;
+  color: rgb(220, 215, 201);
   text-shadow: 2px 2px black;
 }
 
 #p1 {
-  color: floralwhite;
+  color: rgb(220, 215, 201);
   text-shadow: 2px 2px black;
   text-align: justify;
   font-size: xx-large;
@@ -131,13 +149,28 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: rgb(63, 78, 79);
+  position: absolute;
+}
+
+.img-pattern{
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.img-pattern img{
+  object-fit: cover;
 }
 
 .container-img {
   display: flex;
   justify-content: center;
-  transition: transform .2s, filter 1s;
+  transition: transform 1s, filter 1s;
   filter: grayscale(100%);
+  z-index: 2;
 }
 
 .container-img:hover {
@@ -145,38 +178,11 @@ body {
   justify-content: center;
   transform: scale(1.5);
   filter: grayscale(0%);
+  z-index: 2;
 }
 
 .container-img img {
   width: 100%;
-}
-
-table th {
-  border: none;
-}
-
-table tr {
-  border: 1px solid;
-}
-
-table caption {
-  color: floralwhite;
-  font-size: xx-large;
-  font-style: oblique;
-  text-shadow: 2px 2px black;
-  margin: 1em;
-}
-
-.table-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5em;
-}
-
-.table-container table {
-  background-image: linear-gradient(rgb(253, 104, 161), rgb(255, 39, 111), rgb(255, 0, 98));
-  border: 3px solid;
 }
 
 #footer {
@@ -190,8 +196,12 @@ table caption {
   justify-content: center;
 }
 
+#footer a{
+  text-decoration: none;
+}
+
 #contact {
-  color: rgb(221, 29, 71);
+  color: rgb(220, 215, 201);
   text-shadow: 2px 2px black;
 }
 
@@ -211,7 +221,7 @@ table caption {
 
   .header-menu i {
     font-size: xx-large;
-    color: floralwhite;
+    color: rgb(220, 215, 201);
     margin-right: 1em;
   }
 
@@ -228,7 +238,7 @@ table caption {
 
   #side-menu a {
     text-decoration: none;
-    color: floralwhite;
+    color: rgb(220, 215, 201);
   }
 
   .header-img {
