@@ -20,7 +20,7 @@ body {
   z-index: 20;
   border-color: black;
   border-bottom-style: solid;
-  justify-content: left;
+  justify-content: end;
 }
 
 .header-menu ul {
@@ -133,29 +133,22 @@ body {
 }
 
 #header button {
+  color: rgb(220, 215, 201);
   background-color: rgb(92, 162, 107);
-  color: floralwhite;
-  border-radius: 50px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 50%;
-  height: 17%;
-  font-size: x-large;
-  transition: transform .5s;
-  margin: 15%;
+  width: 40%;
+  height: 15%;
+  border-radius: 25px;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: auto;
 }
 
-#header button:hover {
-  background-color: rgb(92, 162, 107);
-  font-size: x-large;
-  transform: scale(1.3);
-}
-
-.img-container{
+.img-container {
   width: 100vw;
   height: 50vh;
 }
 
-.img-container img{
+.img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -176,32 +169,23 @@ body {
 }
 
 .container {
-  width: 92vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(63, 78, 79);
   position: relative;
-  border-radius: 10%;
-  margin: auto;
 }
 
-.container #background-pattern{
-  position: absolute;
-  width: 25vw;
-  height: 25vw;
-  top: 0;
-  left: 0;
-  rotate: 45deg;
-  object-fit: contain;
-}
-
-.container h2{
-  color: rgb(220, 215, 201);
+.container h2 {
+  color: rgb(92, 162, 107);
   text-shadow: 2px 2px black;
   font-size: 10vw;
   margin: 1em;
+  border-radius: 10px;
+  background-color: rgb(220, 215, 201);
+  background-size: 10px;
 }
 
 #p1 {
@@ -216,7 +200,6 @@ body {
   display: flex;
   justify-content: center;
   transition: transform 1s, filter 1s;
-  filter: grayscale(100%);
   width: 30%;
   margin: 1em;
 }
@@ -225,7 +208,6 @@ body {
   display: flex;
   justify-content: center;
   transform: scale(1.5);
-  filter: grayscale(0%);
 }
 
 .container-img img {
@@ -239,11 +221,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  background-color: rgb(220, 215, 201);
 }
 
-.tariffs h2{
-  color: rgb(220, 215, 201);
-  text-shadow: 2px 2px black;
+.tariffs h2 {
+  color: rgb(63, 78, 79);
+  text-shadow: 2px 2px rgb(92, 162, 107);
   font-size: 10vw;
   margin: 1em;
 }
@@ -251,27 +234,58 @@ body {
 .cost {
   width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .method {
- width: 30%;
- background-color: rgb(63, 78, 79);
- border-bottom-left-radius: 20%;
- border-bottom-right-radius: 20%;
- margin: auto;
- transition: transform 1s;
+  width: 80%;
+  height: 50%;
+  background-color: rgb(63, 78, 79);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: auto;
+  margin-bottom: 2em;
+  transition: transform 1s;
+  display: flex;
+  flex-direction: column;
 }
 
 .method:hover {
-  transform: scale(1.3);
- }
+  transform: translate(0px, -10px);
+}
 
 .method img {
   width: 100%;
-  height: 50%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 1s;
+}
+
+.method img:hover {
+  filter: blur(2px);
+}
+
+.method-description {
+  height: 10vh;
+  background-color: rgb(92, 162, 107);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.method-description h4 {
+  font-size: xx-large;
+  color: rgb(220, 215, 201);
+}
+
+.method-description p {
+  color: rgb(220, 215, 201);
+  text-align: center;
+  font-size: larger;
 }
 
 #footer {
@@ -285,7 +299,7 @@ body {
   justify-content: center;
 }
 
-#footer a{
+#footer a {
   text-decoration: none;
 }
 
@@ -329,22 +343,12 @@ body {
     margin: 5%;
   }
 
-  #header button {
-    width: 50%;
-    height: 50%;
-    font-size: x-large;
-    transition: transform .5s;
-    margin: 0.5em;
-  }
-
-  #header button:hover {
-    font-size: x-large;
-    transform: scale(1.1);
-  }
-
   .text-container h2 {
     font-size: 10vw;
     margin: 1em;
+  }
+  .container{
+    margin-top: 7em;
   }
 
   .container-img {
@@ -390,18 +394,6 @@ body {
     font-size: 10vw;
   }
 
-  #header button {
-    width: 50%;
-    height: 50%;
-    font-size: x-large;
-    transition: transform .5s;
-  }
-
-  #header button:hover {
-    font-size: x-large;
-    transform: scale(1.3);
-  }
-
   .text-container h2 {
     font-size: 10vw;
     margin: 1em;
@@ -430,6 +422,10 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+  .header-menu {
+    justify-content: start;
+  }
+
   .header-menu li {
     margin-top: 0.1em;
     margin-left: 1em;
@@ -440,7 +436,6 @@ body {
   .header-menu i {
     visibility: hidden;
   }
-
 
   .header-img {
     flex-direction: row;
@@ -455,6 +450,7 @@ body {
   }
 
   #header {
+    width: 50vw;
     height: 100vh;
   }
 
@@ -462,7 +458,7 @@ body {
     width: 50vw;
     height: 100vh;
   }
-  
+
   #electronic-background-2 {
     width: 50vw;
     height: 100vh;
@@ -477,19 +473,17 @@ body {
   }
 
   #header button {
-    width: 50%;
-    height: 10%;
-    font-size: x-large;
-    transition: transform .5s;
-    margin: 5em;
+    color: rgb(220, 215, 201);
+    background-color: rgb(92, 162, 107);
+    width: 60%;
+    height: 15%;
+    border-radius: 40px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
   }
 
-  #header button:hover {
-    font-size: x-large;
-    transform: scale(1.5);
-  }
-
-  .img-container{
+  .img-container {
     width: 50vw;
     height: 100vh;
   }
@@ -506,6 +500,26 @@ body {
 
   .container-img img {
     width: 100%;
+  }
+
+  .method {
+    width: 30%;
+    height: 50%;
+    background-color: rgb(63, 78, 79);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    margin: auto;
+    margin-bottom: 10em;
+    transition: transform 1s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cost {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 
   #contact {
@@ -526,10 +540,14 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+  .header-menu {
+    justify-content: start;
+  }
+
   .header-menu li {
     margin-top: 0.1em;
     margin-left: 4em;
-    font-size: xx-large;
+    font-size: x-large;
   }
 
   .header-menu i {
@@ -550,23 +568,6 @@ body {
 
   #header h1 {
     font-size: 7vw;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  #header button {
-    width: 50%;
-    height: 50%;
-    font-size: x-large;
-    transition: transform .5s;
-    margin: 3em;
-  }
-
-  #header button:hover {
-    font-size: x-large;
-    transform: scale(1.3);
   }
 
   .text-container h2 {
