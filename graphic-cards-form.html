@@ -15,42 +15,52 @@
 
 <body>
 
-  <nav id="navbar" class="navbar navbar-expand-sm navbar-dark justify-content-center">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link text-white fw-bold fs-3" href="index.html">Home</a>
+  <nav id="navbar">
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
       </li>
     </ul>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
   </nav>
+
+  <div id="side-menu">
+    <ul id="menu-options">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+    </ul>
+  </div>
 
   <div class="container">
     <div class="container-form">
       <div class="left-side">
         <form id="gpu-form" action="graphic-cards-form.html">
           <div class="m-3">
-            <label for="brand" class="form-label">Brand:</label>
+            <label for="brand" class="form-label text-light">Brand:</label>
             <input type="text" class="form-control" id="brand" placeholder="Enter brand" name="brand">
             <span id="error-brand-required">* error: Please enter a brand</span>
           </div>
           <div class="m-3">
-            <label for="series" class="form-label">Series:</label>
+            <label for="series" class="form-label text-light">Series:</label>
             <input type="text" class="form-control" id="series" placeholder="Enter series" name="series">
             <span id="error-series-required">* error: Please enter a series</span>
           </div>
           <div class="m-3">
-            <label for="model" class="form-label">Model:</label>
+            <label for="model" class="form-label text-light">Model:</label>
             <input type="text" class="form-control" id="model" placeholder="Enter model" name="model">
             <span id="error-model-required">* error: Please enter a model</span>
           </div>
           <div class="m-3">
-            <label for="vram" class="form-label">VRam:</label>
+            <label for="vram" class="form-label text-light">VRam:</label>
             <input type="text" class="form-control" id="vram" placeholder="Enter vram" name="vram">
             <span id="error-vram-required">* error: Please enter a VRam</span>
           </div>
-          <button id="submit-button" type="submit" class="btn btn-primary m-3">Submit</button>
+          <button id="submit-button" type="submit">Submit</button>
         </form>
       </div>
     </div>
+
     <div class="container-table">
       <div id="product-table">
         <table class="table mt-5 ml-5 mr-5">
@@ -76,12 +86,11 @@
   </div>
 
 
-
   <div id="footer">
     <div id="contact">
-      <h4>Contact: www.mauriciogilarmas.com</h4>
-      <h4>Phone: (+34) 601 12 54 32</h4>
-      <h4>Web design by: Mauricio Gil Armas</h4>
+      <p class="m-0">Contact: www.mauriciogilarmas.com</p>
+      <p class="m-0">Phone: (+34) 601 12 54 32</p>
+      <p class="m-0">Web design by: Mauricio Gil Armas</p>
     </div>
     <div id="webs">
       <a class="fa-brands fa-instagram" href="https://instagram.com/mauri_gab?igshid=OGQ5ZDc2ODk2ZA=="></a>
@@ -96,9 +105,10 @@
 
 
 
+  <script src="https://kit.fontawesome.com/eca7a7fca6.js" crossorigin="anonymous"></script>
+  <script src="js/side-menu-manager.js"></script>
   <script src="js/form-validation.js"></script>
   <script src="js/table-manager.js"></script>
-  <script src="https://kit.fontawesome.com/eca7a7fca6.js" crossorigin="anonymous"></script>
 
 </body>
 
