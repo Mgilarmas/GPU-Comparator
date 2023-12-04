@@ -26,7 +26,7 @@
 
   <div id="side-menu">
     <ul id="menu-options">
-      <li>
+      <li class="mt-3">
         <a href="index.html">Home</a>
       </li>
     </ul>
@@ -57,6 +57,7 @@
             <span id="error-vram-required">* error: Please enter a VRam</span>
           </div>
           <button id="submit-button" type="submit">Submit</button>
+          <button id="update-button" type="button">Update</button>
         </form>
       </div>
     </div>
@@ -87,10 +88,51 @@
 
 
   <div id="footer">
+    <h1>GPU Comparator</h1>
+    <div class="footer-section">
+      <h3>Discover<i id="up-1" class="fa-solid fa-caret-down"></i><i id="down-1" class="fa-solid fa-caret-up"></i></h3>
+    </div>
+    <div id="discover">
+      <ul id="discover-list">
+        <li>
+          <p class="m-0">All GPUs</p>
+        </li>
+        <li>
+          <p class="m-0">New GPUs</p>
+        </li>
+        <li>
+          <p class="m-0">Popular GPUs</p>
+        </li>
+        <li>
+          <p class="m-0">All images</p>
+        </li>
+      </ul>
+    </div>
+    <hr class="border-2 border-top">
+    <div class="footer-section">
+      <h3>Licencing<i id="up-2" class="fa-solid fa-caret-down"></i><i id="down-2" class="fa-solid fa-caret-up"></i></h3>
+    </div>
+    <div id="license">
+      <ul id="license-list" class="m-0">
+        <li>
+          <p class="m-0">Copyright Mauricio Gil</p>
+        </li>
+        <li>
+          <p class="m-0">Powered by IES El Rincon</p>
+        </li>
+        <li>
+          <p class="m-0">Licencing</p>
+        </li>
+        <li>
+          <p class="m-0">Support</p>
+        </li>
+      </ul>
+    </div>
+    <hr class="border-2 border-top">
     <div id="contact">
       <p class="m-0">Contact: www.mauriciogilarmas.com</p>
       <p class="m-0">Phone: (+34) 601 12 54 32</p>
-      <p class="m-0">Web design by: Mauricio Gil Armas</p>
+      <p class="m-0"s>Web design by: Mauricio Gil Armas</p>
     </div>
     <div id="webs">
       <a class="fa-brands fa-instagram" href="https://instagram.com/mauri_gab?igshid=OGQ5ZDc2ODk2ZA=="></a>
@@ -99,6 +141,10 @@
       <a class="fa-brands fa-linkedin"
         href="https://www.linkedin.com/in/gilarmas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"></a>
       <a class="fa-brands fa-facebook" href="https://www.facebook.com/mauricio.j.gil.1"></a>
+    </div>
+    <div id="copyright">
+      <p class="m-0">Terms of Service | Privacy Policy</p>
+      <p class="m-0">Copyright © 2023 Mauricio Gil Armas. All rights reserved.</p>
     </div>
   </div>
 
@@ -109,6 +155,8 @@
   <script src="js/side-menu-manager.js"></script>
   <script src="js/form-validation.js"></script>
   <script src="js/table-manager.js"></script>
+  <script src="js/footer-manager.js"></script>
+  <script src="js/pages-transition.js"></script>
 
 </body>
 

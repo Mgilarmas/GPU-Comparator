@@ -13,8 +13,10 @@ function initialize() {
 }
 
 function openListDiscover() {
+  hideListLicense();
+
   const DISCOVER_DIV = document.getElementById("discover");
-  DISCOVER_DIV.style.height = "10vh";
+  DISCOVER_DIV.style.height = "15vh";
 
   const FOOTER_ICON_UP_1 = document.getElementById("up-1");
   FOOTER_ICON_UP_1.style.visibility = "hidden"
@@ -35,8 +37,10 @@ function hideListDiscover() {
 }
 
 function openListLicense() {
+  hideListDiscover();
+
   const LICENSE_DIV = document.getElementById("license");
-  LICENSE_DIV.style.height = "10vh";
+  LICENSE_DIV.style.height = "15vh";
 
   const FOOTER_ICON_UP_2 = document.getElementById("up-2");
   FOOTER_ICON_UP_2.style.visibility = "hidden"

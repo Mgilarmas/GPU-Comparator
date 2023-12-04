@@ -12,7 +12,7 @@ function showGpu() {
   let tableFull = "";
 
   for (let i = 0; i < table.length; i++) {
-    tableFull += `<tr><td> ${table[i].brand} </td><td> ${table[i].series} </td><td> ${table[i].model} </td><td> ${table[i].vram} <button class="fs-6 m-0.7 btn btn-danger rounded-pill border border-dark" onclick="deleteGpu(${i})">Delete</button></td></tr>`;
+    tableFull += `<tr><td> ${table[i].brand} </td><td> ${table[i].series} </td><td> ${table[i].model} </td><td> ${table[i].vram} <button class="fs-6 m-0.7 btn btn-danger rounded-pill border border-dark" onclick="deleteGpu(${i})">Delete</button><button class="fs-6 m-0.7 btn btn-success rounded-pill border border-dark" onclick="updateGpu(${i})">Update</button></td></tr>`;
   }
 
   bodyTable.innerHTML = tableFull;
@@ -37,6 +37,19 @@ function addGpu(event) {
 
 function deleteGpu(tableId) {
   table.splice(tableId, 1);
+
+  showGpu();
+}
+
+function updateGpu(tableId) {
+  for (var i = 0; i < table.length; ++i) {
+    if (tableId == i){
+      table[i].brand = document.getElementById("brand").value;
+      table[i].series = document.getElementById("series").value;
+      table[i].model = document.getElementById("model").value;
+      table[i].vram = document.getElementById("vram").value;
+    }
+  }
 
   showGpu();
 }
