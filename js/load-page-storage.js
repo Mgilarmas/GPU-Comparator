@@ -5,11 +5,11 @@ function initialize(){
   const FORM_LINK_SIDE_MENU = document.getElementById("form-link-side-menu");
   FORM_LINK_SIDE_MENU.addEventListener("click", waitToLoadForm);
 
-  const STORAGE_LINK = document.getElementById("storage-link");
-  STORAGE_LINK.addEventListener("click", waitToLoadStorage);
+  const STORAGE_LINK = document.getElementById("home-link");
+  STORAGE_LINK.addEventListener("click", waitToLoadHome);
 
-  const STORAGE_LINK_SIDE_MENU = document.getElementById("storage-link-side-menu");
-  STORAGE_LINK_SIDE_MENU.addEventListener("click", waitToLoadStorage);
+  const STORAGE_LINK_SIDE_MENU = document.getElementById("home-link-side-menu");
+  STORAGE_LINK_SIDE_MENU.addEventListener("click", waitToLoadHome);
 }
 
 function waitToLoadForm() {
@@ -18,9 +18,9 @@ function waitToLoadForm() {
   }, 1000);
 }
 
-function waitToLoadStorage() {
+function waitToLoadHome() {
   setTimeout(() => {
-    window.location = 'https://gpufire.web.app/local-storage.html'
+    window.location = 'https://gpufire.web.app/index.html'
   }, 1000);
 }
 

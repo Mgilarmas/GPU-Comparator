@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-#html-transition-form {
+#html-transition-storage {
   background-color: rgb(92, 162, 107);
   height: 1vh;
   width: 1vw;
@@ -19,17 +19,6 @@ body {
   z-index: 10000;
   transition: 1s;
 }
-
-/* #html-transition-out {
-  background-color: rgb(92, 162, 107);
-  height: 100vh;
-  width: 100vw;
-  border-radius: 0%;
-  visibility: visible;
-  position: absolute;
-  z-index: 10000;
-  transition: 1s;
-} */
 
 #navbar {
   position: fixed;
@@ -105,58 +94,15 @@ body {
   color: rgb(220, 215, 201);
 }
 
-.container {
-  display: flex;
+.container-table {
   width: 100vw;
-  flex-direction: column;
+  height: 50vh;
+  display: flex;
   justify-content: center;
 }
 
-.container-form {
-  width: 90vw;
-  margin-top: 5em;
-}
-
-.left-side button{
-  color: rgb(220, 215, 201);
-  background-color: rgb(92, 162, 107);
-  width: 30%;
-  height: 15%;
-  border-radius: 25px;
-  font-size: large;
-  font-weight: bold;
-}
-
-#submit-button {
-  display: block;
-}
-
-#update-button {
-  display: none;
-}
-
-.container-table {
-  width: 90vw;
-}
-
-#error-brand-required {
-  color: red;
-  display: none;
-}
-
-#error-series-required {
-  color: red;
-  display: none;
-}
-
-#error-model-required {
-  color: red;
-  display: none;
-}
-
-#error-vram-required {
-  color: red;
-  display: none;
+#product-table {
+  width: 90%;
 }
 
 #footer {
@@ -275,20 +221,6 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .container-form {
-    width: 50vw;
-    margin-bottom: 3em;
-  }
-
-  .container-table {
-    width: 50vw;
-    margin-top: 5em;
-  }
-
   #footer {
     position: absolute;
   }
@@ -309,18 +241,6 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .container-form {
-    width: 50vw;
-  }
-
-  .container-table {
-    width: 50vw;
-  }
-
   #footer {
     position: absolute;
   }
@@ -356,18 +276,6 @@ body {
     visibility: hidden;
   }
 
-  .container {
-    flex-direction: row;
-  }
-
-  .container-form {
-    width: 50vw;
-  }
-
-  .container-table {
-    width: 50vw;
-  }
-
   #footer {
     position: absolute;
   }
@@ -389,18 +297,6 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .container-form {
-    width: 50vw;
-  }
-
-  .container-table {
-    width: 50vw;
-  }
-
   #footer {
     position: absolute;
     height: 70vh;
