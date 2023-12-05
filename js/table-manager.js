@@ -32,6 +32,7 @@ function addGpu(event) {
     let newGpu = { brand: brandIntroducedByUser, series: seriesIntroducedByUser, model: modelIntroducedByUser, vram: vramIntroducedByUser };
     table.push(newGpu)
   }
+
   showGpu();
 }
 
@@ -44,10 +45,18 @@ function deleteGpu(tableId) {
 function updateGpu(tableId) {
   for (var i = 0; i < table.length; ++i) {
     if (tableId == i){
-      table[i].brand = document.getElementById("brand").value;
-      table[i].series = document.getElementById("series").value;
-      table[i].model = document.getElementById("model").value;
-      table[i].vram = document.getElementById("vram").value;
+      if (document.getElementById("brand").value != ""){
+        table[i].brand = document.getElementById("brand").value;
+      }
+      if (document.getElementById("series").value != ""){
+        table[i].series = document.getElementById("series").value;
+      }
+      if (document.getElementById("model").value != ""){
+        table[i].model = document.getElementById("model").value;
+      }
+      if (document.getElementById("vram").value != ""){
+        table[i].vram = document.getElementById("vram").value;
+      }
     }
   }
 

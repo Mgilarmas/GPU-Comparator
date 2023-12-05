@@ -9,6 +9,28 @@ body {
   padding: 0;
 }
 
+#html-transition {
+  background-color: rgb(92, 162, 107);
+  height: 1vh;
+  width: 1vw;
+  border-radius: 100%;
+  visibility: hidden;
+  position: absolute;
+  z-index: 10000;
+  transition: 1s;
+}
+
+#html-transition-out {
+  background-color: rgb(92, 162, 107);
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0%;
+  visibility: visible;
+  position: absolute;
+  z-index: 10000;
+  transition: 1s;
+}
+
 #navbar {
   position: fixed;
   background-color: rgb(44, 54, 57);

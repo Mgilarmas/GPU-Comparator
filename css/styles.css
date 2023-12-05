@@ -11,8 +11,8 @@ body {
 
 #html-transition {
   background-color: rgb(92, 162, 107);
-  height: 1vw;
-  width: 1vh;
+  height: 1vh;
+  width: 1vw;
   border-radius: 100%;
   visibility: hidden;
   position: absolute;
