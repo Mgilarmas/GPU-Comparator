@@ -112,7 +112,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: left;
   justify-content: center;
 }
 
@@ -302,7 +301,7 @@ body {
     height: 70vh;
   }
 
-  #footer h3{
+  #footer h3 {
     font-size: large;
   }
 

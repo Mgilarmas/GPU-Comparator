@@ -1,4 +1,4 @@
-function initialize(){
+function initialize() {
   const FORM_LINK = document.getElementById("form-link");
   FORM_LINK.addEventListener("click", waitToLoadForm);
 

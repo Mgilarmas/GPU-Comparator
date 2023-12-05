@@ -1,4 +1,4 @@
-function initialize(){
+function initialize() {
   const HOME_LINK = document.getElementById("home-link");
   HOME_LINK.addEventListener("click", waitToLoadHome);
 

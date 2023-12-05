@@ -6,10 +6,10 @@ function initialize() {
   LINK_HOME_SIDE_MENU.addEventListener("click", showEffect);
 
   const STORAGE_FORM = document.getElementById("storage-link");
-    STORAGE_FORM.addEventListener("click", showEffect);
+  STORAGE_FORM.addEventListener("click", showEffect);
 
-    const STORAGE_FORM_SIDE_MENU = document.getElementById("storage-link-side-menu");
-    STORAGE_FORM_SIDE_MENU.addEventListener("click", showEffect);
+  const STORAGE_FORM_SIDE_MENU = document.getElementById("storage-link-side-menu");
+  STORAGE_FORM_SIDE_MENU.addEventListener("click", showEffect);
 }
 
 function showEffect() {

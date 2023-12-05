@@ -117,7 +117,7 @@ body {
   margin-top: 5em;
 }
 
-.left-side button{
+.left-side button {
   color: rgb(220, 215, 201);
   background-color: rgb(92, 162, 107);
   width: 30%;
@@ -166,7 +166,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: left;
   justify-content: center;
 }
 
@@ -406,7 +405,7 @@ body {
     height: 70vh;
   }
 
-  #footer h3{
+  #footer h3 {
     font-size: large;
   }
 
