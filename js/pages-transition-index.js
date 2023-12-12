@@ -16,7 +16,7 @@ function showEffect() {
     const CIRCLE_EFFECT = document.getElementById("html-transition-home");
     CIRCLE_EFFECT.style.visibility = "visible";
     CIRCLE_EFFECT.style.width += "100vw";
-    CIRCLE_EFFECT.style.height += "100vh";
+    CIRCLE_EFFECT.style.height += "10000vh";
     CIRCLE_EFFECT.style.borderRadius = "0%";
 }
 

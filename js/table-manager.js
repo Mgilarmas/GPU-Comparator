@@ -42,7 +42,7 @@ function readData() {
     html += "<td>" + element.vram + "</td>";
     html += '<td><button class="fs-6 m-0.7 btn btn-danger rounded-pill border border-dark" onclick="deleteGpu(' + index + ')">Delete</button><button class="fs-6 m-0.7 btn btn-success rounded-pill border border-dark" onclick="editGpu(' + index + ')">Edit</button></td>'
     html += "<tr/>";
-  })
+  });
 
   document.querySelector('#table-data').innerHTML = html;
 }
