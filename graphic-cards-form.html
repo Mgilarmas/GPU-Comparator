@@ -94,6 +94,19 @@
     </div>
   </div>
 
+  <div class="chat">
+    <h1>Live Chat</h1>
+    <div class="send-message">
+      <form id="form-send-message">
+        <input type="text" id="message-text" name="message" placeholder="your message">
+        <input type="text" id="message-sender" name="sent-by" placeholder="your name">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div id="message-list">
+    </div>
+  </div>
+
 
   <div id="footer">
     <h1>GPU Comparator</h1>
@@ -158,14 +171,14 @@
 
 
 
-
+  <script type="module" src="js/firebase-chat.js"></script>
   <script src="https://kit.fontawesome.com/eca7a7fca6.js" crossorigin="anonymous"></script>
   <script src="js/side-menu-manager.js"></script>
   <script src="js/form-validation.js"></script>
-  <script src="js/table-manager.js"></script>
   <script src="js/footer-manager.js"></script>
   <script src="js/pages-transition-form.js"></script>
   <script src="js/load-page-form.js"></script>
+  <script src="js/table-manager.js"></script>
 
 </body>
 
