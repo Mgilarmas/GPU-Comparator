@@ -171,6 +171,7 @@ body {
   border-radius: 10px;
   margin: auto;
   margin-bottom: 1em;
+  overflow: hidden;
 }
 
 .chat>div {
@@ -189,13 +190,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .send-message button{
   color: rgb(220, 215, 201);
   background-color: rgb(92, 162, 107);
-  width: 5%;
+  width: 30vw;
   height: 15%;
   border-radius: 25px;
   font-size: large;
@@ -207,6 +208,8 @@ body {
   border-radius: 10px;
   box-sizing: border-box;
   padding: 0px 10px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 #message-list{
@@ -379,6 +382,10 @@ body {
 
   .container-table {
     width: 50vw;
+  }
+
+  .send-message button{
+    width: 10vw;
   }
 
   #footer {
